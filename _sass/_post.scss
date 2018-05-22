@@ -1,0 +1,90 @@
+.post-container {
+    display: flex;
+}
+.post-nav {
+    flex-basis: 25%;
+    padding-top: 4rem;
+
+    margin-right: 2rem;
+    margin-left: -25%;
+    transition: $fast;
+    &.active {
+        margin-left: 0;
+    }
+}
+.post {
+    font-size: 1.4rem;
+    flex-grow: 1;
+
+    a {
+        color: inherit;
+    }
+    p, li {
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        margin-bottom: .5rem;
+    }
+    li {
+        margin-bottom: .5rem;
+    }
+    ul {
+        padding-left: 1em;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+    }
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+    img {
+        margin: 0 auto;
+        max-width: 100%;
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    .hasimage {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .full {
+        max-width: 150%;
+        margin-left: -25%;
+    }
+    blockquote {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.post-inner {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.bleed {
+    width: 100vw;
+    margin-bottom: 1rem;
+    margin-left: calc(((100vw - 50rem) / 2) * -1);
+}
+
+.header-content {
+    width: 50rem;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.post-header {
+}

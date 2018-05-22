@@ -1,0 +1,32 @@
+<footer class='site-footer'>
+    Max Kohler 2018
+</footer>
+<script>
+
+document.addEventListener('DOMContentLoaded', function(){
+    var header = document.querySelector('.site-header');
+    let headlines = document.querySelectorAll('.post-content h2[id]');
+    console.log(headlines)
+    for (let i = 0; i < headlines.length; i++){
+        let link = document.createElement('a')
+        link.setAttribute('href', '#' + headlines[i].id)
+        link.innerHTML = '#'
+        link.classList.add('post-jumplink')
+        console.log(link)
+        headlines[i].appendChild(link)
+    }
+    
+    let paragraphs = document.querySelectorAll('.post-content p');
+    for (let i = 0; i < paragraphs.length; i++){
+        let image = paragraphs[i].querySelector('img, video');
+        if (image){
+            paragraphs[i].classList.add('hasimage')
+        }
+    }
+    let navToggle = document.querySelector('.nav-toggle')
+    let nav = document.querySelector('.post-nav')
+    navToggle.addEventListener('click', function(){
+        nav.classList.toggle('active')
+    })
+}, false);
+</script>

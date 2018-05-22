@@ -1,0 +1,66 @@
+$cool-blue: rgb(207, 217, 226);
+$cool-grey: rgb(239, 241, 240);
+$turqoise: rgb(70, 173, 176);
+$azure-blue: rgb(187, 211, 237);
+$new-blue: rgb(116, 150, 177);
+$tabriz-blue: rgb(44, 118, 179);
+$adriatic: rgb(48, 90, 140);
+$saphire: rgb(49, 51, 126);
+$cobalt: rgb(46, 57, 72);
+$royal-blue: rgb(58, 50, 125);
+$purple: rgb(85, 48, 126);
+$pale-grey: rgb(241, 238, 229);
+$real-grey: rgb(184, 187, 180);
+$dark-grey: rgb(86, 95, 81);
+$smoke: rgb(130, 126, 125);
+$bagdad-brown: rgb(70, 52, 28);
+$ebony: rgb(39, 31, 29);
+$amethyst: rgb(49, 38, 55);
+$imperial-blue: rgb(41, 44, 49);
+$bitter-chocolate: rgb(48, 42, 28);
+$claret: rgb(69, 30, 31);
+$factory-yellow: rgb(244, 224, 51);
+$sorbet-yellow: rgb(241, 236, 142);
+$citrine: rgb(226, 188, 51);
+$mandarin: rgb(213, 98, 38);
+$bright-red: rgb(201, 41, 41);
+$vermillion: rgb(172, 46, 50);
+$scarlet: rgb(128, 32, 36);
+$stone: rgb(223, 199, 163);
+$harvest: rgb(173, 152, 95);
+$nubuck-brown: rgb(138, 113, 82);
+$white: rgb(249, 242, 213);
+$natural: rgb(254, 254, 246);
+$vellum-white: rgb(253, 249, 238);
+$candy-pink: rgb(236, 200, 202);
+$mist: rgb(234, 225, 207);
+$lavender: rgb(185, 171, 207);
+$fuchsia-pink: rgb(185, 73, 131);
+$bright-white: rgb(255, 253, 241);
+$pristine-white: rgb(254, 253, 249);
+$ice-whit: rgb(255, 252, 247);
+$frost: rgb(246, 246, 254);
+$powder-green: rgb(225, 238, 220);
+$pistachio: rgb(221, 233, 187);
+$park-green: rgb(173, 214, 174);
+$mid-green: rgb(88, 105, 71);
+$emerald: rgb(49, 122, 95);
+$lockwood-green: rgb(38, 106, 63);
+$forest: rgb(38, 67, 37);
+$racing-green: rgb(45, 54, 46);
+$mars-green: rgb(0, 140, 140);
+
+$fast: 300ms;
+$sans: "Suisse Int'l", sans-serif;
+
+@mixin bp($point) {
+    @if $point == l {
+      @media (min-width: 65rem) { @content; }
+    }
+    @else if $point == m {
+      @media (min-width: 45rem) { @content; }
+    }
+    @else if $point == s {
+      @media (min-width: 35rem)  { @content; }
+    }
+  }

@@ -1,0 +1,10 @@
+    <button class="nav-toggle">Menu</button>
+    <nav>
+        {% for post in site.posts %}
+            <a href="{{post.url}}">{{post.title}}</a>
+        {% endfor %}
+        <a href='#1'>Hidden Archives Essay</a>
+        <a href='#1'>Words from Camberwell Graphic Design</a>
+        <a href='/'>Teaching Machines to Draw</a>
+        <a href='#1'>Clippings Website</a>
+    </nav>

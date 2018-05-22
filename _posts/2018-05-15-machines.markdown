@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Teaching Machines to Draw"
+date:   2018-05-15 21:09:29 +0100
+---
+
+The goal of this project was twofold. On a technical level, it created an opportunity to explore physical computing (using the Arduino platform), interaction design and generative imagery. On a conceptual level, it allowed me to investigate human-machine relationships from a cultural perspective.
+
+<div class='note' markdown='1'>
+
+</div>
+
+### Early experiments
+### Drawing Machine One
+#### Software Pipeline, CMYK Images
+#### Colour seperations (printmaking)
+
+![Colourlibrary](/assets/machines/colorch.jpg)
+[colorlibraries.ch](http://colorlibrary.ch/how-to-install/)
+
+> Color Library is a database of color profiles for artists, designers, photographers, and printers who are looking for a novel yet professional color management solution. Color Library offers a large variety of color combinations, from basic colors to metallics, neons, and pastels. Color Library was created within the Workflow research and development project. It was launched in 2014 during a workshop held at ECAL/University of Art and Design Lausanne with Franz Sigg (RIT/Rochester Institute of Technology) and Maximage.
+[Colorlibrary](http://colorlibrary.ch/about/about-color-library/)
+
+## Drawing Machine Two
+
+![DM2 Schema](/assets/machines/dm2-schema.svg)
+
+#### Physical interface (Socket.io)
+
+#### Exploiting scale
+
+# Cultural Context
