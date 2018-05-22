@@ -43,7 +43,7 @@
         margin-bottom: .5rem;
         font-size: 1.2rem;
     }
-    img {
+    img, iframe {
         margin: 0 auto;
         max-width: 100%;
         display: block;
@@ -57,14 +57,21 @@
     }
 
     .full {
-        max-width: 150%;
+        width: 150%;
         margin-left: -25%;
+        margin-top: 2rem;
     }
     blockquote {
         font-size: 1.2rem;
         padding-left: 1rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    img.bleed {
+        width: 98vw;
+        max-width: none;
+        margin-bottom: 1rem;
+        margin-left: calc(((100vw - 50rem) / 2) * -1);
     }
 }
 
@@ -73,11 +80,6 @@
     margin: 0 auto;
 }
 
-.bleed {
-    width: 100vw;
-    margin-bottom: 1rem;
-    margin-left: calc(((100vw - 50rem) / 2) * -1);
-}
 
 .header-content {
     width: 50rem;
