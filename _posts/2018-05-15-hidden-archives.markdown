@@ -20,7 +20,23 @@ Generating outcomes for this project was difficult
 
 ### ML Books
 
+<div class='masonry-5 bleed hasImage' markdown='1'>
+![Arc Studio](/assets/ml/arc-studio-graphic-design-itsnicethat-12-1.jpeg)
+![Pop Art Mon Armour](/assets/ml/PopArtMonAmour-03.jpeg)
+![Lars Muller 2](/assets/ml/30-years-of-swiss-typographic-discourse-02.png)
+![Neubau](/assets/ml/neubau-forst-080-081.png)
+![Eatock](/assets/ml/Eatock3.jpeg)
+![Finn](/assets/ml/finn1.jpg)
+![Finn](/assets/ml/finn2.jpg)
+![Letraset by unit Editions](/assets/ml/unit.jpg)
+![Lars Muller](/assets/ml/positions-on-emancipations.png)
+![Lars Muller 3](/assets/ml/roberto-burle-marx-lectures.png)
+
+<p class='caption'>Hellooo</p>
+</div>
+
 I made various attempts to visualise the machine learning datasets I was looking at. Each one is different, requiring a different mode of presentation. I printed a spreadsheet containing anonymised data about American criminals at a large format. I had part of the FERET database reproduced as C-type prints and hung them in a grid to emphasise its scale and strictly controlled aesthetics. I 3d-rendered and animated part of the Gait dataset. The terms of use of these databases usually ban online reproduction  of any significant portion of them, which is the point of the project.
+
 Eventually, the book emerged as a good medium. It would allow me to reproduce a larger share of the databases (which is still less than 5%). The book is also less overwhelming than the wall mounted grid. They're a familiar format that allows the reader to discover the scale of these databases slowly. 
 
 ### Production

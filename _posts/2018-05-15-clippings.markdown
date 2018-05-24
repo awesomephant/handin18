@@ -10,7 +10,7 @@ The idea here was to take a single result of my research into machine learning a
 - With the machine generating the copy, I could focus on the execution - typography, paper stocks, printing processes.
 - The notion of automated journalism speaks to a lot of more general concerns about machine learning algorithms. There is of course the potential of human journalists loosing their jobs (a very real potential, despite publishers saying otherwise). There's also the idea of machines *posing as humans* - even the neural network I trained became uncannily good at recreating a human tone of voice. But beyond that, the idea of machines writing our news stories (and another set of machines controlling who sees them on their newsfeed) and thus shaping the way we see the world is troubling.   
 
-<img class="full" src="/assets/ml/letterpress-5.jpg" alt="Metal type spelling This question is for testing wether you are human"/>
+<img class="bleed" src="/assets/ml/letterpress-5.jpg" alt="Metal type spelling This question is for testing wether you are human"/>
 Letterpress testing
 
 #### Technical Details

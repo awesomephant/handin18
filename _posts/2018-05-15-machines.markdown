@@ -123,6 +123,11 @@ The main advantage of this mechanism is that it scales easily - to go from A2 to
 
 The exact control mechanism of the machine is easier demonstrated than explained:
 
+The idea to use the machine as a real-time drawing instrument failed largely because it's too slow - the few drawings I completed each took hours. There was also the issue of noise - the cheap potentiometers I used were badly shielded, and my wiring probably didn't help either. While this did introduce some interesting side effects (such as the machine reacting to cell phones going off nearby), it made it difficult to keep the pen under control.
+
+One attempt to mitigate this was to do away with the motors, and project a simulated version of the mechanism. The simulation could much faster, and removing the motors and their related circuit reduced the noise dramatically. 
+
+<p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256795786?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
 #### Physical interface (Socket.io)
 

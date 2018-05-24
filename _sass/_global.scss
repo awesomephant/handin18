@@ -27,40 +27,19 @@ nav {
     display: flex;
     flex-wrap: wrap;
     a {
-        text-align: center;
         .post-nav & {
-        flex-basis: 100%;
-        height: 15vh;
+            flex-basis: 100%;
 
         }
         flex-basis: 33%;
-        height: 40vh;
         color: black;
-        padding: 1rem;
-        transition: 900ms;
+        padding: .5rem 1rem;
         border-radius: 0;
-        font-size: 1.4rem;
+        font-size: calc(1rem + 1.6vw);
         text-decoration: none;
         display: block;
-        &:nth-child(1){
-            background: url('/assets/feret.jpg');
-            background-size: cover;
-            background-position: bottom;
-        }
-        &:nth-child(2){
-            background: saturate(lighten(rgb(255,40,2), 10), 30);
-        }
-        &:nth-child(3){
-            background: lighten($pale-grey, 0);
-        }
-        &:nth-child(4){
-            background: saturate(lighten($factory-yellow, 0), 9);
-        }
-        &:nth-child(5){
-            background: saturate(lighten($lavender, 8), 0);
-        }
         &:hover, &:focus {
-            border-radius: 100%;
+            text-decoration: underline;
         }
     }
 }

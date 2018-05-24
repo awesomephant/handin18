@@ -34,6 +34,7 @@
         let navToggle = document.querySelector('.nav-toggle')
         let nav = document.querySelector('.post-nav')
         navToggle.addEventListener('click', function () {
+            document.body.classList.toggle('nav-active')
             nav.classList.toggle('active')
         })
     }, false);
