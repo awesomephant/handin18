@@ -4,31 +4,125 @@ title:  "Teaching Machines to Draw"
 date:   2018-05-15 21:09:29 +0100
 ---
 
+
 The goal of this project was twofold. On a technical level, it created an opportunity to explore physical computing (using the Arduino platform), interaction design and generative imagery. On a conceptual level, it allowed me to investigate human-machine relationships from a cultural perspective.
 
-<div class='note' markdown='1'>
+## Background
 
+There was a short window in the early 1970s when computers had enough power to create graphics, but inkjet printers weren't widely available yet. During this time, a drawing machine was the only way to get an image on paper.
+
+<div class='masonry-2 full' markdown='1'>
+![Calcomp](/assets/machines/calcomp-1.jpg)
+![Calcomp](/assets/machines/calcomp-2.jpg)
 </div>
 
+Diagrams for early microchips were drawn out by plotters:
+
+![Sam Lucente](/assets/machines/intel.jpg)
+Diagram for Intel486 (TM) Microprocessor Chip (1989), (probably) by Sam Lucente. [The Museum of Modern Art](https://www.moma.org/collection/works/4296?classifications=any&date_begin=Pre-1850&date_end=2018&locale=en&page=1&q=chip&with_images=1)
+
+### Machine artists
+
+<div class='masonry-5 full' markdown='1'>
+![Molnar](/assets/machines/vera_molnar_1.jpg)
+![Letraset](/assets/machines/letraset.jpg)
+![Letraset](/assets/machines/lewitt.jpg)
+![Letraset](/assets/machines/mad_sans.PNG)
+![Letraset](/assets/machines/thomas-muller-1.jpg)
+![Letraset](/assets/machines/plotter_art.jpg)
+![Letraset](/assets/machines/sol_lewitt_wall_drawing.jpg)
+![Letraset](/assets/machines/sol_lewitt_1.jpg)
+![Letraset](/assets/machines/coal_drawing_machine.jpg)
+</div>
+
+
 ### Early experiments
+
 ### Drawing Machine One
-#### Software Pipeline, CMYK Images
+
+Drawing Machine One is based on the same mechanism as commercial 3d printers, vinyl cutters and CNC-machines. The drawing instrument is fixed to platform that slides along two sets of steel rods on linear bearings. Timing belts connect the platform to two stepper motors, one for each axis of movement. A computer sets the speed and direction of each stepper motor to move the platform around on the drawing surface.
+
+#### Progression
+
+The first images I drew on the machine were primarily intended to test the mechanism. They are the result of very simple programs interacting directly with the stepper motor.
+
+```
+Repeat:
+    Move Stepper A by 100 steps in a random direction;
+    Move Stepper B by 100 steps in a random direction;
+    Wait 200ms;
+```
+
+Next, I wrote driver software that could move the pen to predetermined points (using maths to work out the precise speed and direction of each stepper). By stringing together a series of points, I could 'write out' a drawing and have the machine execute it. The code for a square might look something like this:
+
+```
+Go to the following points one after another:
+    [100,100]
+    [200,100]
+    [200,200]
+    [100,200]
+    [100,100]
+```
+
+Writing these instructions by hand quickly becomes tedious. I put together a script that could generate them automatically from an SVG file - the kind you can export from Illustrator. Now I could design drawings visually in Illustrator and send them to the machine. I used the `transform` filter in Illustrator to generate these drawings of repeated shapes. Each one typically translated into hundreds of machine instructions.
+
+![Machine drawing](/assets/machines/dm1-1.jpg)
+
+As these geometric drawing started to become repeteteive, I started to look for other ways to generate images. Drawing bitmap images seemed like a way to expand the limits of the machine. 
+
+```
+Scale the image;
+Convert the image to black and white;
+Repeat for each pixel in the image:
+    Translate the brightness into a number n between 0 and 255;
+    Add n zig-zags to the result;
+Save the result as an SVG.
+```
+
+Images created in this way translated into tens of thousands of machine instructions, and took hours to execute.
+
+After running a series of black and white images, I started to look for a way to draw full-colour images. The process I developed amounts to drawing four single-colour images on top each other, one each for the cyan, magenta, yellow and black channels. I was able to source ballpoint pens that matched process colours surprisingly accurately and led to good results.
+
+The full workflow for a colour image looks like this:
+
+1. Split the source image into CMYK
+2. Adjust the contrast for each channel
+3. Convert each channel to zig-zags
+4. Load all four zig-zag images into Illustrator and scale them to the final size. Export as SVGs.
+5. Convert all four SVGs to machine instructions
+6. Run all four sets of instructions, changing the pen for each colour.
+
+I wrote roughly 2000 lines of Node.js code to do all of this. This is available [here](https://github.com/awesomephant/bitmapToVector) and [here](https://github.com/awesomephant/robotics).
 
 <p class="full hasimage" style="padding:92% 0 0% 0;position:relative;"><iframe src="https://player.vimeo.com/video/271333952?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-Six-hour timelapse showing one of the first four-colour drawings I ran. The image comes from my <a href="/2018/05/15/hidden-archives.html">research into machine learning datasets</a>
+Six-hour timelapse showing one of the first four-colour drawings I ran. The image comes from my research into machine learning datasets</a>
 </p>
 
-#### Colour seperations (printmaking)
+A final refinement of this process is to look at colours other than CMYK. I discovered a Swiss research group that creates software to create colour separations for two, three, four or five colours. This is used by commercial printers to create the illusion of full-colour images in fewer plates.
 
 ![Colourlibrary](/assets/machines/colorch.jpg)
-[colorlibraries.ch](http://colorlibrary.ch/how-to-install/)
+Full-colour image printed in red and green spot colours[colorlibraries.ch](http://colorlibrary.ch/how-to-install/)
 
-> Color Library is a database of color profiles for artists, designers, photographers, and printers who are looking for a novel yet professional color management solution. Color Library offers a large variety of color combinations, from basic colors to metallics, neons, and pastels. Color Library was created within the Workflow research and development project. It was launched in 2014 during a workshop held at ECAL/University of Art and Design Lausanne with Franz Sigg (RIT/Rochester Institute of Technology) and Maximage.
-[Colorlibrary](http://colorlibrary.ch/about/about-color-library/)
+They offer a profile for red, green and blue ink. This seemed especially appropriate because it mirrors the 'default' colours of cheap ballpoint pens.
 
 ## Drawing Machine Two
 
-![DM2 Schema](/assets/machines/dm2-schema.svg)
+<p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271718470?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+I spent a considerable amount of time making the first drawing machine mecanically sound. This was satisfying, but it also made the results of the machine more and more predictable - it became essentially a big, slow printer.
+
+Bored, I made the decision to take a week to build a second drawing machine. Unlike the first machine, it wouldn't run on a predetermined program. Instead, I designed a control panel that would allow me to use the machine as a real-time drawing instrument. The machine also used a much simpler mechanism: The pen is conected to the steppers by wire, and pushed against a vertical drawing surface by gravity.
+
+
+![DM2 Schema](/assets/machines/dm2-drawing.jpg)
+
+![DM2 Schema](/assets/machines/dm2-1.jpg)
+
+The main advantage of this mechanism is that it scales easily - to go from A2 to the size of a wall just required more fishing line.
+
+
+The exact control mechanism of the machine is easier demonstrated than explained:
+
 
 #### Physical interface (Socket.io)
 

@@ -2,31 +2,39 @@
     Max Kohler 2018
 </footer>
 <script>
+    (function (d) {
+        var config = {
+            kitId: 'nxh8pvv',
+            scriptTimeout: 3000,
+            async: true
+        },
+            h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
 
-document.addEventListener('DOMContentLoaded', function(){
-    var header = document.querySelector('.site-header');
-    let headlines = document.querySelectorAll('.post-content h2[id]');
-    console.log(headlines)
-    for (let i = 0; i < headlines.length; i++){
-        let link = document.createElement('a')
-        link.setAttribute('href', '#' + headlines[i].id)
-        link.innerHTML = '#'
-        link.classList.add('post-jumplink')
-        console.log(link)
-        headlines[i].appendChild(link)
-    }
-    
-    let paragraphs = document.querySelectorAll('.post-content p');
-    for (let i = 0; i < paragraphs.length; i++){
-        let image = paragraphs[i].querySelector('img, video, iframe');
-        if (image){
-            paragraphs[i].classList.add('hasimage')
+    document.addEventListener('DOMContentLoaded', function () {
+        var header = document.querySelector('.site-header');
+        let headlines = document.querySelectorAll('.post-content h2[id]');
+        console.log(headlines)
+        for (let i = 0; i < headlines.length; i++) {
+            let link = document.createElement('a')
+            link.setAttribute('href', '#' + headlines[i].id)
+            link.innerHTML = '#'
+            link.classList.add('post-jumplink')
+            console.log(link)
+            headlines[i].appendChild(link)
         }
-    }
-    let navToggle = document.querySelector('.nav-toggle')
-    let nav = document.querySelector('.post-nav')
-    navToggle.addEventListener('click', function(){
-        nav.classList.toggle('active')
-    })
-}, false);
+
+        let paragraphs = document.querySelectorAll('.post-content p');
+        for (let i = 0; i < paragraphs.length; i++) {
+            let image = paragraphs[i].querySelector('img, video, iframe');
+            if (image) {
+                paragraphs[i].classList.add('hasimage')
+            }
+        }
+        let navToggle = document.querySelector('.nav-toggle')
+        let nav = document.querySelector('.post-nav')
+        navToggle.addEventListener('click', function () {
+            nav.classList.toggle('active')
+        })
+    }, false);
 </script>

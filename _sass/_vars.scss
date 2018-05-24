@@ -49,9 +49,10 @@ $lockwood-green: rgb(38, 106, 63);
 $forest: rgb(38, 67, 37);
 $racing-green: rgb(45, 54, 46);
 $mars-green: rgb(0, 140, 140);
-
+$black: rgb(20,20,20);
 $fast: 300ms;
 $sans: "Suisse Int'l", sans-serif;
+$serif: "Suisse Works", serif;
 
 @mixin bp($point) {
     @if $point == l {
