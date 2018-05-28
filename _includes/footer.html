@@ -14,7 +14,6 @@
     document.addEventListener('DOMContentLoaded', function () {
         var header = document.querySelector('.site-header');
         let headlines = document.querySelectorAll('.post-content h2[id]');
-        console.log(headlines)
         for (let i = 0; i < headlines.length; i++) {
             let link = document.createElement('a')
             link.setAttribute('href', '#' + headlines[i].id)
@@ -37,5 +36,13 @@
             document.body.classList.toggle('nav-active')
             nav.classList.toggle('active')
         })
+
+        let gridImages = document.querySelectorAll('.masonry-5 img')
+        for (let i = 0; i < gridImages.length; i++){
+            let img = gridImages[i];
+            let title = img.getAttribute('src').slice(17).toLowerCase()
+            img.insertAdjacentHTML('afterend', '<span class="masonry-caption">' + title + '</div>');
+        }
+        
     }, false);
 </script>
