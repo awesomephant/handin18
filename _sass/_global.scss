@@ -23,26 +23,6 @@ h1 {
     letter-spacing: .01em;
     font-weight: 400;
 }
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    a {
-        .post-nav & {
-            flex-basis: 100%;
-
-        }
-        flex-basis: 33%;
-        color: black;
-        padding: .5rem 1rem;
-        border-radius: 0;
-        font-size: calc(1rem + 1.6vw);
-        text-decoration: none;
-        display: block;
-        &:hover, &:focus {
-            text-decoration: underline;
-        }
-    }
-}
 
 .site-footer {
     text-align: center;

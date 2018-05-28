@@ -31,6 +31,8 @@ Generating outcomes for this project was difficult
 ![Letraset by unit Editions](/assets/ml/unit.jpg)
 ![Lars Muller](/assets/ml/positions-on-emancipations.png)
 ![Lars Muller 3](/assets/ml/roberto-burle-marx-lectures.png)
+![Empire 1](/assets/ml/empire-1.jpg)
+![Empire 2](/assets/ml/empire-2.png)
 
 <p class='caption'>Hellooo</p>
 </div>

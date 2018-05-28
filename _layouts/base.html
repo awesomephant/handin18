@@ -7,9 +7,21 @@
     <title>GD Camberwell 2018</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    {% if page.hasDemo %}
+    <link rel="stylesheet" href="/css/dm2-demo.css">
+    {% endif %}
+
 </head>
 <body>
     {{ content }}
+    
+    {% if page.hasDemo %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/2.2.0/draggabilly.pkgd.js"></script>
+    <script src="/js/dm2-demo.js"></script>
+    
+    {% endif %}
+
     {% include footer.html %}
 </body>
 </html>

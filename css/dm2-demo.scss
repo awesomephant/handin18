@@ -1,0 +1,245 @@
+---
+---
+
+$track-w: 8rem;
+$track-h: 0.2em;
+$thumb-d: 1em;
+$track-c: lightgray;
+$filll-c: red;
+@mixin track($fill: 0) {
+    box-sizing: border-box;
+    border: none;
+    width: $track-w;
+    height: $track-h;
+    background: $track-c;
+    @if $fill==1 {
+        .js & {
+            background: linear-gradient($filll-c, $filll-c) 0/ var(--sx) 100% no-repeat $track-c;
+        }
+    }
+}
+
+@mixin fill() {
+    height: $track-h;
+    background: white;
+}
+
+@mixin thumb() {
+    box-sizing: border-box;
+    border: none;
+    width: $thumb-d;
+    height: $thumb-d;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid black;
+}
+
+[type="range"] {
+    &,
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+    }
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--val) - var(--min))/var(--range));
+    --sx: calc(0.5*#{$thumb-d} + var(--ratio)*(100% - #{$thumb-d}));
+    margin: 0;
+    padding: 0;
+    width: $track-w;
+    height: $thumb-d;
+    background: transparent;
+    font: 1em/1 arial,
+    sans-serif;
+    &::-webkit-slider-runnable-track {
+        @include track(1);
+    }
+    &::-moz-range-track {
+        @include track;
+    }
+    &::-ms-track {
+        @include track;
+    }
+    &::-moz-range-progress {
+        @include fill;
+    }
+    &::-ms-fill-lower {
+        @include fill;
+    }
+    &::-webkit-slider-thumb {
+        margin-top: 0.5*($track-h - $thumb-d);
+        @include thumb;
+    }
+    &::-moz-range-thumb {
+        @include thumb;
+    }
+    &::-ms-thumb {
+        margin-top: 0;
+        @include thumb;
+    }
+    &::-ms-tooltip {
+        display: none;
+    }
+}
+
+$black: rgb(40, 40, 40);
+.dm2-demo {
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+    }
+    .result {
+        mix-blend-mode: multiply;
+    }
+    height: 90vh;
+    position: relative;
+    .window {
+        display: inline-block;
+        border: 1px solid $black;
+        background: white;
+        border-radius: 4px;
+        font-family: sans-serif;
+        position: absolute;
+        box-shadow: 4px 4px 0 rgba(black, .1);
+        &.left-motor {
+            left: 1rem;
+            top: 30vh;
+        }
+        &.right-motor {
+            left: 70vw;
+            top: 40vh;
+        }
+        &.colors {
+            left: 74vw;
+            top: 10vh;
+            max-width: 15rem;
+        }
+        &.file-actions {
+            left: 84vw;
+            top: 10vh;
+            max-width: 15rem;
+        }
+
+    }
+    .window-header {
+        padding: 0.5rem;
+        text-align: center;
+        border-bottom: 1px solid $black;
+    }
+    .controls-group {
+        padding: 1rem;
+        display: flex;
+        max-width: 400px;
+        flex-wrap: wrap;
+        border-top: 1px solid lightgray;
+        .control-panel {
+            margin-right: .5rem;
+            &.color {
+                flex-basis: 100%;
+            }
+        }
+        label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        input[type="radio"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            transition: 0.2s all linear;
+            outline: none;
+        }
+    }
+
+    .function-list {
+        display: flex;
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        label {
+            flex-basis: 100%;
+        }
+        input {  
+            flex-basis: 45%;
+            flex-grow: 1;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+            height: 3rem;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            border-radius: 3px;
+            background-color: lighten(lightgray, 14);
+            border: 1px solid lightgray;
+        }
+        .function-sine{
+            background-image: url('../assets/machines/sine.svg')
+        }
+        .function-triangle{
+            background-image: url('../assets/machines/triangle.svg');
+            margin-right: 0;
+        }
+        .function-square{
+            background-image: url('../assets/machines/square.svg');
+            margin-right: 0;
+        }
+        .function-sawtooth{
+            background-image: url('../assets/machines/sawtooth.svg')
+        }
+        input:checked {
+            border: 1px solid black;
+        }
+    }
+
+    .color-list {
+        margin-bottom: 1rem;
+        input {
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            margin-right: .3rem;
+            margin-bottom: .4rem;
+            border: 1px solid white;
+        }
+        input:checked {
+            opacity: 1;
+            transform: scale(1.1);
+            border: 1px solid $black;
+        }
+    }
+    .size-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            border-radius: 50%;
+            border: 1px solid lightgray;
+            background: lighten(lightgray, 1);
+        }
+        input:checked {
+            opacity: 1;
+            border: 1px solid $black;
+        }
+    }
+    
+    button, .btn {
+        text-decoration: none;
+        text-align: center;
+        appearance: none;
+        border: 1px solid lightgray;
+        box-shadow: 0 1px 2px -1px gray;
+        border-radius: 3px;
+        padding: .5rem;
+        background: white;
+        flex-basis: 100%;
+        display: block;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        &:hover {
+            cursor: pointer;
+            background: lighten(lightgray, 15);
+        }
+    }
+}

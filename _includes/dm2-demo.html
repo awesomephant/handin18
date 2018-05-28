@@ -1,0 +1,91 @@
+<div class="dm2-demo bleed">
+    <canvas height='1000px' width='1200px' class='result' id="result"></canvas>
+    <canvas height='1000px' width='1200px' class='lines' id="lines"></canvas>
+    <div class="window draggable left-motor">
+        <header class="window-header">
+            <h4 class="window-title">Left Motor</h4>
+        </header>
+        <canvas class='' height='350px' width='400px' id="controlA"></canvas>
+        <div class="controls-group">
+            <div class='control-panel'>
+                <label for="a">Amplitude</label>
+                <input name='a' class='control' data-stepper='a' data-parameter='a' type="range" min="0" max="200">
+            </div>
+            <div class='control'>
+                <label for="f">Frequency</label>
+                <input name='f' class='control' data-stepper='a' data-parameter='f' type="range" min="0" step='.0001' max=".05">
+            </div>
+            <div class='function-list'>
+                <label for="f">Function f(t)</label>
+                    <input name='function' class='function-sine' data-stepper='a' value='sin' type="radio" checked>
+                    <input name='function' class='function-triangle' data-stepper='a'  value='triangle' type="radio">
+                    <input name='function' class='function-sawtooth' data-stepper='a' value='sawtooth' type="radio">
+                    <input name='function' class='function-square' data-stepper='a' value='square' type="radio">
+            </div>
+        </div>
+    </div>
+    <div class="window draggable right-motor">
+        <header class="window-header">
+            <h4 class="window-title">Right Motor</h4>
+        </header>
+        <canvas height='350px' width='400px' id="controlB"></canvas>
+        <div class="controls-group">
+            <div class='control-panel'>
+                <label for="a">Amplitude</label>
+                <input name='a' class='control' data-stepper='b' data-parameter='a' type="range" min="0" max="200">
+            </div>
+            <div class='control'>
+                <label for="f">Frequency</label>
+                <input name='f' class='control' data-stepper='b' data-parameter='f' type="range" min="0" step='.0001' max=".05">
+            </div>
+            <div class='function-list'>
+                <label for="f">Function f(t)</label>
+                    <input name='function' class='function-sine' data-stepper='b' value='sin' type="radio" checked>
+                    <input name='function' class='function-triangle' data-stepper='b'  value='triangle' type="radio">
+                    <input name='function' class='function-sawtooth' data-stepper='b' value='sawtooth' type="radio">
+                    <input name='function' class='function-square' data-stepper='b' value='square' type="radio">
+            </div>
+        </div>
+    </div>
+
+    <div class="window draggable colors">
+        <header class="window-header">
+            <h4 class="window-title">Pen</h4>
+        </header>
+        <div class="controls-group">
+            <div class='control-panel color'>
+                <label for="color">Colour</label>
+                <div class='color-list'>
+                    <input name='color' type="radio" value="#FF3134" checked="checked">
+                    <input name='color' type="radio" value="#FF9323">
+                    <input name='color' type="radio" value="#FFD723">
+                    <input name='color' type="radio" value="#8FE351">
+                    <input name='color' type="radio" value="#3BDEFF">
+                    <input name='color' type="radio" value="#3B5DFF">
+                    <input name='color' type="radio" value="pink">
+                    <input name='color' type="radio" value="#eee">
+                    <input name='color' type="radio" value="#111">
+                </div>
+            </div>
+            <div class='control-panel color'>
+                <label for="color">Size</label>
+                <div class='size-list'>
+                    <input name='size' type="radio" value="3" checked>
+                    <input name='size' type="radio" value="5">
+                    <input name='size' type="radio" value="8">
+                    <input name='size' type="radio" value="13">
+                    <input name='size' type="radio" value="21">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="window draggable file-actions">
+        <header class="window-header">
+            <h4 class="window-title">File</h4>
+        </header>
+        <div class="controls-group">
+            <a class='btn' href='#1' id='saveImage'>Save Image</a>
+            <button id='clearImage'>Clear</button>
+        </div>
+    </div>
+</div>

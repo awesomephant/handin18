@@ -1,20 +1,7 @@
 .post-container {
     display: flex;
 }
-.post-nav {
-    width: 30%;
-    padding-top: 4rem;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-right: 2rem;
-    margin-left: -30%;
-    transition: $fast;
-    &.active {
-        margin-left: 0;
-    }
-}
+
 .post-jumplink {
     display: none;
 }
