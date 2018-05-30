@@ -40,11 +40,21 @@ Letterpress forme ready to be printed
 Three text blocks on the bed of the press, ready to print. 
 </p>
 
+
+The decision to print these outcomes letterpress effectively turns the network's outcomes back to their original form. I chose a light stock (Southbank Book White 115g) to create the impression of newsprint (I considered actual newsprint, but dismissed it because it deteriorates quickly and would stand up to repeated handling). I printed the first 6 headlines Vandercook galley press. The final four are printed on a Stephenson Blake power press, which required significantly more setup (the type has to be permanently mounted into the press) but produces much crisper results.
+
 <p class="full">
 <img src="/assets/ml/prints.jpg" alt="Forme"/>
 All ten prints laid out before cropping
 </p>
 
-The decision to print these outcomes letterpress effectively turns the network's outcomes back to their original form. I chose a light stock to create the impression of newsprint (I considered actual newsprint, but dismissed it because it deteriorates quickly and would stand up to repeated handling. A total of ten headlines were printed on a Vandercook galle press and a Stephenson Blake proofing press.
-The finished prints were tightly cropped to give the impression they had been cut out of a larger sheet. Some prints were designed with additional rules or copy designed to be cut through the middle to strengthen that impression. The clippings are presented in a printed portfolio (contstructed out of Colourplan Pale Gray) to give the idea of a loose collection and to encourage the view to handle them.
+The finished prints were tightly cropped to give the impression they had been cut out of a larger sheet. Some prints were designed with additional rules or copy designed to be cut through the middle to strengthen that impression.
 
+![Portfolio 1](/assets/ml/portfolio.jpg)
+Initial version of the folder. The prints are held in place by small slots cut into the paper.
+
+The clippings are presented in a printed portfolio (contstructed out of Colourplan Pale Gray) to give the idea of a loose collection and to encourage the view to handle them.
+
+## Website
+
+Finally, I built a website that contains more details about the technique used to generate the news clippings and allows the viewer to create more news clippings using that technique. The final version is available at [maxkoehler.com/clippings-site](http://www.maxkoehler.com/clippings-site/).

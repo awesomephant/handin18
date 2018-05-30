@@ -17,13 +17,15 @@ There was a short window in the early 1970s when computers had enough power to c
 ![Calcomp](/assets/machines/calcomp-2.jpg)
 </div>
 
-### Machine artists
+## Visual References
 
 <div class='masonry-5 bleed' markdown='1'>
 ![Molnar](/assets/machines/vera_molnar_1.jpg)
+![Molnar](/assets/machines/vera_molnar_2.jpg)
+![Molnar](/assets/machines/vera_molnar_3.jpg)
 ![Letraset](/assets/machines/letraset.jpg)
-![Letraset](/assets/machines/lewitt.jpg)
-![Letraset](/assets/machines/mad_sans.PNG)
+![mad sans](/assets/machines/mad_sans.PNG)
+![gt cinetype](/assets/machines/cinetype.gif)
 ![Thomas Muller](/assets/machines/thomas-muller-1.jpg)
 ![Thomas Muller](/assets/machines/thomas-muller-2.jpg)
 ![Thomas Muller](/assets/machines/thomas-muller-3.jpg)
@@ -37,6 +39,27 @@ There was a short window in the early 1970s when computers had enough power to c
 ![Sam Lucente](/assets/machines/sam-lucente-1.jpg)
 ![Sam Lucente](/assets/machines/sam-lucente-2.jpg)
 ![Sam Lucente](/assets/machines/sam-lucente-3.jpg)
+![Il Lee](/assets/machines/IL_LEE-Untitled303.jpg)
+![Il Lee](/assets/machines/il_lee_2.jpg)
+![Kuhne](/assets/machines/dafi-kuhne.jpg)
+![Kuhne](/assets/machines/dafi-kuhne-2.jpg)
+![Condiditonal design](/assets/machines/workbook-conditional-design.jpg)
+![Moniker](/assets/machines/moniker-sand-pen.jpg)
+![Moniker](/assets/machines/moniker-do-not-touch.jpg)
+![Moniker](/assets/machines/moniker-red-yellow-blue.jpg)
+![Mexico Olympics](/assets/machines/mexico-68-olympics-03.jpg)
+![Jetset](/assets/machines/experimental-jetset-automatically_arranged_alphabets.jpg)
+![Tinguley](/assets/machines/tinguley.jpg)
+![Lewitt](/assets/machines/sol_lewitt_2.jpg)
+![Lewitt](/assets/machines/sol_lewitt_3.jpg)
+![lewit](/assets/machines/lewitt.jpg)
+![Glitch](/assets/machines/DJ3PjQ6X0AANSWp.jpg)
+![Mayer](/assets/machines/hansjorg_mayer_1.jpg)
+![Morrelet](/assets/machines/francois_morrelet_1.jpg)
+![Morrelet](/assets/machines/francois_morrelet_2.jpg)
+![Morrelet](/assets/machines/francois_morrelet_3.jpg)
+![Morrelet](/assets/machines/francois_morrelet_4.jpg)
+
 </div>
 
 
@@ -44,7 +67,7 @@ There was a short window in the early 1970s when computers had enough power to c
 
 A major reason to try and build a functioning drawing machine was to learn electrical engineering and physical computing. I was fairly confident I could solve the programming problems (and I had already worked out some of the logic over the summer) but I coudldn't remember the last time I touched a soldering iron. I hoped that taking on a large project like this drawing machine would create the necessary pressure to to learn what I had to.
 
-I found that while there is good documentation online about some of the more advanced problems (how to control a motor, how to interface with a computer), I there is little about the fundamental techniques. [My notes](http://www.maxkoehler.com/2017/teaching-machines-to-draw/) contain such episodes as me spending nearly a week trying to figure out how to connect two electrical wires. (You remove the isolation on both wires, add heatshink tubing, twist them together, add flux, solder and apply the heatshrink).
+I found that while there is good documentation online about some of the more advanced problems (how to control a motor, how to interface with a computer), I there is little about the fundamental techniques. [My notes](http://www.maxkoehler.com/2017/teaching-machines-to-draw/) contain such episodes as me spending nearly a week trying to figure out how to connect two electrical wires. (It turns out the correct procedure is to remove the isolation on both wires, add heatshink tubing, twist them together, add flux, solder and apply the heatshrink).
 
 #### Progression
 
@@ -64,7 +87,7 @@ This resulted in a diagonal pattern of movement:
 Next, I wrote driver software that could move the pen to predetermined points (using maths to work out the precise speed and direction of each stepper). By stringing together a series of points, I could 'write out' a drawing and have the machine execute it. The instructions for a square might look something like this:
 
 ```pseudocode
-Go to the following coordniates one after another [x,y]:
+Go to the following [x,y] coordniates one after another:
     [100,100]
     [200,100]
     [200,200]
@@ -144,31 +167,50 @@ Among many others, they offer a profile for red, green and blue ink. This seemed
 
 I spent a considerable amount of time making the first drawing machine mecanically sound. This was satisfying, but it also made the results of the machine more and more predictable - it became essentially a big, slow printer.
 
-Bored, I made the decision to take a week to build a second drawing machine. Unlike the first machine, it wouldn't run on a predetermined program. Instead, I designed a control panel that would allow me to use the machine as a real-time drawing instrument. The machine also used a much simpler mechanism: The pen is conected to the steppers by wire, and pushed against a vertical drawing surface by gravity.
+Bored, I made the decision to take a week to build a second drawing machine. This one used a much simpler mechanism than Drawing Machine One: The pen is conected to the steppers by wire, and pushed against a vertical drawing surface by gravity (eliminating the need for bearings, steel rods etc). More importantly, it wouldn't run on a predetermined program like the first machine. Instead, I designed a control panel that would allow me to use the machine as a real-time drawing instrument.
+
+<p class='full' markdown='1'>
+![DM2 Schema](/assets/machines/dm2-schema.svg)
+Wiring diagram for Drawing Machine 2
+</p>
+
+<p class='masonry-2 full' full markdown='1'>
+![Moog](/assets/machines/moog.jpg)
+![Moog](/assets/machines/dm2-4.jpg)
+</p>
+
+The control mechanism is based on the analogue synthesizer, which uses mathematical wave functions to generate sounds. I used the [same functions](http://www.maxkoehler.com/2017/teaching-machines-to-draw/#january-28-2018-another-drawing-machine) to control the movements of the pen on the page. The knobs and switches on the control panel allow the user to manipulate these functions, which in turn changes the movement of the pen. I kept both the control panel and the digital interface it is connected to verbose (with cryptic instructions), giving viewers room to discover their different functions on their own terms.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/272609059?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 
-![DM2 Schema](/assets/machines/dm2-drawing.jpg)
 
-![DM2 Schema](/assets/machines/dm2-1.jpg)
-
-The control panel doesn't move the pen directly. Instead, it manipulates two wave function which in turn control the motors. A simulation of the mechanism helps to explain this:
-
+{% if page.nope %}
 {% include dm2-demo.html %}
+{% endif %}
 
-A more [technnical description is available](http://www.maxkoehler.com/2017/teaching-machines-to-draw/#january-28-2018-another-drawing-machine) in my notes.
-
-The idea to use the machine as a real-time drawing instrument failed largely because it's too slow - the few drawings I completed each took hours. There was also the issue of noise - the cheap potentiometers I used were badly shielded, and my wiring probably didn't help either. While this did introduce some interesting side effects (such as the machine reacting to cell phones going off nearby), it made it difficult to keep the pen under control.
+The idea to use the machine as a real-time drawing instrument failed largely because it's too slow - the few drawings I completed each took hours. There was also the issue of noise - the cheap potentiometers I used were badly shielded, and my wiring probably didn't help either. While this did introduce some interesting side effects (such as the machine reacting to cell phones going off nearby), it made it difficult to keep the pen under control. This became especially clear at the work in progress show, when I had to constantly reset the machine after the pen had veered off the paper. 
 
 <p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271718470?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
-One attempt to mitigate this was to do away with the motors, and project a simulated version of the mechanism. The simulation could much faster, and removing the motors and their related circuit reduced the noise dramatically. 
+One attempt to mitigate this was to do away with the motors, and project a simulated version of the mechanism. The simulation could much faster, and removing the motors and their related circuit reduced the visual noise dramatically. The more instant feedback from the projection allowed people to develop an understanding of the mechanism without me explaining it to them - a promising result.
 
 <p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256795786?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
 ![Machine drawing](/assets/machines/dm2-large.png)
 DM2 Installation Mockup
 
-There was some talk about installing a version of Drawing Machine Two on the side of the college building. I abandoned this after learning about the health and safety requirements for an installation like this - It's the kind of job you have to be an actual engineer for.
+There was some talk about installing a version of Drawing Machine Two on the side of the college building. I wrote software that would essentially automate the act of me twisting the knobs on the control panel, allowing me to plan out a series of drawings I could run during the installation.
+
+<div class='masonry-5 full' markdown='1'>
+![Machine drawing](/assets/machines/large-scale-5.png)
+![Machine drawing](/assets/machines/large-scale-6.png)
+![Machine drawing](/assets/machines/large-scale-7.png)
+![Machine drawing](/assets/machines/large-scale-8.png)
+![Machine drawing](/assets/machines/large-scale-9.png)
+</div>
+
+I abandoned the plan after learning about the health and safety requirements for an installation like this - It's the kind of job you have to be an actual engineer for.
 
 <div class="references" markdown='1'>
 - [Thomas Muller](http://thomas-mueller-drawings.com/albums/grossformatige-zeichnungen/#)
