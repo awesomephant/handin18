@@ -55,6 +55,26 @@ Initial version of the folder. The prints are held in place by small slots cut i
 
 The clippings are presented in a printed portfolio (contstructed out of Colourplan Pale Gray) to give the idea of a loose collection and to encourage the view to handle them.
 
+![Portfolio 1](/assets/ml/portfolio-2.jpg)
+Final version of the folder
+
 ## Website
 
-Finally, I built a website that contains more details about the technique used to generate the news clippings and allows the viewer to create more news clippings using that technique. The final version is available at [maxkoehler.com/clippings-site](http://www.maxkoehler.com/clippings-site/).
+![Portfolio 1](/assets/ml/clippings-site.png)
+
+Finally, I built a website that contains more details about the technique used to generate the news clippings and allows the viewer to create more news clippings using that technique. When I was making the prints I designed the typography and layouts myself, referencing real examples from the New York Times. On the website, the layouts are created by a randomised algorithm:
+
+```pseudocode
+When the "Generate Clipping" button is pressed do the following:
+    Pick a headline, byline, location, and body copy at random
+    Pick a paper colour between #fefefe and #a9a9a9 at random 
+    Pick a random number of columns between 1 and 3
+    For each headline, byline, location etc. :
+        Pick a typeface out of a given set
+        Set the type size within a given range
+    Finally, "crop" the clipping by a random amount
+```
+
+This algorithm allows for tens of thousands of possible variations, making it unlikely any viewer will ever see the same clipping twice.
+
+The final website is available at [maxkoehler.com/clippings-site](http://www.maxkoehler.com/clippings-site/), sourcecode [here](https://github.com/awesomephant/clippings-site)
