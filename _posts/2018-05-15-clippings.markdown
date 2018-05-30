@@ -32,6 +32,17 @@ Letterpress testing
 
 <p class="full">
 <img src="/assets/ml/forme.jpg" alt="Forme"/>
+Letterpress forme ready to be printed
+</p>
+
+<p class="full">
+<img src="/assets/ml/press.jpg" alt="Forme"/>
+Three text blocks on the bed of the press, ready to print. 
+</p>
+
+<p class="full">
+<img src="/assets/ml/prints.jpg" alt="Forme"/>
+All ten prints laid out before cropping
 </p>
 
 The decision to print these outcomes letterpress effectively turns the network's outcomes back to their original form. I chose a light stock to create the impression of newsprint (I considered actual newsprint, but dismissed it because it deteriorates quickly and would stand up to repeated handling. A total of ten headlines were printed on a Vandercook galle press and a Stephenson Blake proofing press.

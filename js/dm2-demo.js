@@ -292,7 +292,6 @@ var init = function () {
     initFileActions();
     window.requestAnimationFrame(step);
     var draggableElems = document.querySelectorAll('.draggable');
-    console.log(draggableElems)
     // array of Draggabillies
     var draggies = []
     // init Draggabillies

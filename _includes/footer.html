@@ -43,6 +43,13 @@
             let title = img.getAttribute('src').slice(17).toLowerCase()
             img.insertAdjacentHTML('afterend', '<span class="masonry-caption">' + title + '</div>');
         }
+
+        var codeSections = document.querySelectorAll('.language-pseudocode')
+        console.log(codeSections)
+        for (let i = 0; i < codeSections.length; i++){
+            let c = codeSections[i];
+            c.insertAdjacentHTML('beforebegin', '<p class="code-hint">Pseudocode <a class="more" href="https://en.wikipedia.org/wiki/Pseudocode">More</a></p>')
+        }
         
     }, false);
 </script>
