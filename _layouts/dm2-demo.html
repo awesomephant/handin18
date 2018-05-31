@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GD Camberwell 2018</title>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    
+    {% if page.hasDemo %}
+    <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/css/dm2-demo.css">
+    {% endif %}
+
+</head>
+<body>
 <div class="dm2-demo bleed">
     <canvas height='1000px' width='1200px' class='result' id="result"></canvas>
     <canvas height='1000px' width='1200px' class='lines' id="lines"></canvas>
@@ -89,3 +104,11 @@
         </div>
     </div>
 </div>
+    {% if page.hasDemo %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/2.2.0/draggabilly.pkgd.js"></script>
+    <script src="{{site.baseurl}}/js/dm2-demo.js"></script> 
+    {% endif %}
+
+    {% include footer.html %}
+</body>
+</html>

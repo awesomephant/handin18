@@ -3,23 +3,16 @@ layout: post
 type: 'Process'
 title:  "Teaching Machines to Draw"
 date:   2018-05-15 21:09:29 +0100
-hasDemo: true
 ---
 
 The goal of this project was twofold. On a technical level, it created an opportunity to explore physical computing (using the Arduino platform), interaction design and generative imagery. On a conceptual level, it allowed me to investigate human-machine relationships from a cultural perspective.
 
-## Historical Background
-
-There was a short window in the early 1970s when computers had enough power to create graphics, but inkjet printers weren't widely available yet. During this time, a drawing machine was the only way to get an image on paper.
-
-<div class='masonry-2 full' markdown='1'>
-![Calcomp](/handin18/assets/machines/calcomp-1.jpg)
-![Calcomp](/handin18/assets/machines/calcomp-2.jpg)
-</div>
-
 ## Visual References
 
 <div class='masonry-5 bleed' markdown='1'>
+![Automaton](/handin18/assets/machines/calcomp-1.jpg)
+![Calcomp](/handin18/assets/machines/calcomp-2.jpg)
+![Calcomp](/handin18/assets/machines/automata.jpg)
 ![Molnar](/handin18/assets/machines/vera_molnar_1.jpg)
 ![Molnar](/handin18/assets/machines/vera_molnar_2.jpg)
 ![Molnar](/handin18/assets/machines/vera_molnar_3.jpg)
@@ -95,6 +88,8 @@ Go to the following [x,y] coordniates one after another:
     [100,100]
 ```
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/272604704?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
 Writing these instructions by hand quickly becomes tedious, so I started to write simple programs to generate them for me. I liked the idea of writing a small set of instructions and having the computer extrapolate them into a complex image - maybe analogous to Lewitt's wall drawings, where a small set of instructions is interpreted by an assistant. The programs I wrote at this stage where rarely longer than a few dozen lines, and largely consisted of repeating, translating and randomising basic geometric shapes.
 
 <p data-height="450" data-theme-id="33564" data-slug-hash="opyLLa" data-default-tab="result" data-user="maxakohler" data-embed-version="2" data-pen-title="Snap Woodgrain" class="codepen">See the Pen <a href="https://codepen.io/maxakohler/pen/opyLLa/">Snap Woodgrain</a> by Max Kohler (<a href="https://codepen.io/maxakohler">@maxakohler</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -153,41 +148,35 @@ The software I wrote to do this is [open source](https://github.com/awesomephant
 Six-hour timelapse showing one of the first four-colour drawings I ran. The image comes from my research into machine learning datasets
 </p>
 
-A final refinement of this process is to look at colours other than CMYK. I discovered a Swiss research group that creates software to create colour separations for two, three, four or five colours. This is used by commercial printers to create the illusion of full-colour images in fewer plates.
-
-![Colourlibrary](/handin18/assets/machines/colorch.jpg)
-Full-colour image printed in red and green spot colours[colorlibraries.ch](http://colorlibrary.ch/how-to-install/)
-
-Among many others, they offer a profile for red, green and blue ink. This seemed appropriate because it mirrors the 'default' colours of cheap ballpoint pens. I was able to source the profile and used to create a number of drawings.
 
 ## Drawing Machine Two
-
-<p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271887427?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>Drawing Machine Two at the Work in progress show</p>
-
 
 I spent a considerable amount of time making the first drawing machine mecanically sound. This was satisfying, but it also made the results of the machine more and more predictable - it became essentially a big, slow printer.
 
 Bored, I made the decision to take a week to build a second drawing machine. This one used a much simpler mechanism than Drawing Machine One: The pen is conected to the steppers by wire, and pushed against a vertical drawing surface by gravity (eliminating the need for bearings, steel rods etc). More importantly, it wouldn't run on a predetermined program like the first machine. Instead, I designed a control panel that would allow me to use the machine as a real-time drawing instrument.
 
 <p class='full' markdown='1'>
+![DM2 drawing](/handin18/assets/machines/dm2-drawing.JPG)
+![DM2 drawing](/handin18/assets/machines/dm2-drawing-1.JPG)
+</p>
+
+<p class='full' markdown='1'>
 ![DM2 Schema](/handin18/assets/machines/dm2-schema.svg)
 Wiring diagram for Drawing Machine 2
 </p>
 
-<p class='masonry-2 full' full markdown='1'>
-![Moog](/handin18/assets/machines/moog.jpg)
-![Moog](/handin18/assets/machines/dm2-4.jpg)
+<p class="hasimage" style="padding:60% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271887427?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+Drawing Machine Two at the Work in progress show
 </p>
+
+![Moog](/handin18/assets/machines/moog.jpg)
+Robert Moog, Moog Synthesizer
 
 The control mechanism is based on the analogue synthesizer, which uses mathematical wave functions to generate sounds. I used the [same functions](http://www.maxkoehler.com/2017/teaching-machines-to-draw/#january-28-2018-another-drawing-machine) to control the movements of the pen on the page. The knobs and switches on the control panel allow the user to manipulate these functions, which in turn changes the movement of the pen. I kept both the control panel and the digital interface it is connected to verbose (with cryptic instructions), giving viewers room to discover their different functions on their own terms.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/272609059?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271765210?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-{% if page.nope %}
-{% include dm2-demo.html %}
-{% endif %}
 
 The idea to use the machine as a real-time drawing instrument failed largely because it's too slow - the few drawings I completed each took hours. There was also the issue of noise - the cheap potentiometers I used were badly shielded, and my wiring probably didn't help either. While this did introduce some interesting side effects (such as the machine reacting to cell phones going off nearby), it made it difficult to keep the pen under control. This became especially clear at the work in progress show, when I had to constantly reset the machine after the pen had veered off the paper. 
 
@@ -196,6 +185,8 @@ The idea to use the machine as a real-time drawing instrument failed largely bec
 One attempt to mitigate this was to do away with the motors, and project a simulated version of the mechanism. The simulation could much faster, and removing the motors and their related circuit reduced the visual noise dramatically. The more instant feedback from the projection allowed people to develop an understanding of the mechanism without me explaining it to them - a promising result.
 
 <p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256795786?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+This simulation was eventually developed into a fully functional version of the drawing machine. This [can be viewed here](/handin18/dm2-demo/)
 
 ![Machine drawing](/handin18/assets/machines/dm2-large.png)
 DM2 Installation Mockup
@@ -210,9 +201,7 @@ There was some talk about installing a version of Drawing Machine Two on the sid
 ![Machine drawing](/handin18/assets/machines/large-scale-9.png)
 </div>
 
-I abandoned the plan after learning about the health and safety requirements for an installation like this - It's the kind of job you have to be an actual engineer for.
+<p class="hasimage full" style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271765427?color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p>
 
-<div class="references" markdown='1'>
-- [Thomas Muller](http://thomas-mueller-drawings.com/albums/grossformatige-zeichnungen/#)
-- [Sam Lucente](https://www.moma.org/artists/6612?locale=en)
-</div>
+I abandoned the plan after learning about the health and safety requirements for an installation like this - It's the kind of job you have to be an actual engineer for.

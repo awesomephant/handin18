@@ -1,9 +1,12 @@
 ---
 ---
 
+@import 'vars';
+@import 'global';
+
 $track-w: 8rem;
-$track-h: 0.2em;
-$thumb-d: 1em;
+$track-h: 0.1em;
+$thumb-d: .7em;
 $track-c: lightgray;
 $filll-c: red;
 @mixin track($fill: 0) {
@@ -81,6 +84,18 @@ $filll-c: red;
 }
 
 $black: rgb(40, 40, 40);
+
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    opacity: .3;
+    font-size: .8rem;
+}
+
+body {
+    overflow: hidden;
+}
+
 .dm2-demo {
     .lines {
         position: absolute;
@@ -127,6 +142,11 @@ $black: rgb(40, 40, 40);
         text-align: center;
         border-bottom: 1px solid $black;
     }
+
+.window-title {
+    font-size: 1rem;
+}
+
     .controls-group {
         padding: 1rem;
         display: flex;
