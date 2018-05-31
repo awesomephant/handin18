@@ -1,7 +1,7 @@
 ---
 layout: post
 type: 'Process'
-title:  "Teaching Machines to Draw"
+title:  "Process: Teaching Machines to Draw"
 date:   2018-05-15 21:09:29 +0100
 ---
 

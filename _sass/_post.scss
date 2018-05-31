@@ -79,7 +79,11 @@
         padding-left: 1em;
     }
     h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
+        margin-left: -10%;
+        width: 120%;
+        font-family: $sans;
+        margin-bottom: 2rem;
     }
     h2 {
         text-align: center;
@@ -93,7 +97,14 @@
         margin-bottom: .5rem;
         font-size: 1.2rem;
     }
-
+    strong {
+        font-family: $sans;
+        margin-right: 1rem;
+        font-size: .9rem;
+    }
+blockquote {
+    font-family: $sans;
+}
     pre {
         padding: 1rem;
         margin-bottom: 1rem;
