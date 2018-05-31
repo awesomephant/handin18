@@ -13,52 +13,52 @@ The goal of this project was twofold. On a technical level, it created an opport
 There was a short window in the early 1970s when computers had enough power to create graphics, but inkjet printers weren't widely available yet. During this time, a drawing machine was the only way to get an image on paper.
 
 <div class='masonry-2 full' markdown='1'>
-![Calcomp](/assets/machines/calcomp-1.jpg)
-![Calcomp](/assets/machines/calcomp-2.jpg)
+![Calcomp](/handin18/assets/machines/calcomp-1.jpg)
+![Calcomp](/handin18/assets/machines/calcomp-2.jpg)
 </div>
 
 ## Visual References
 
 <div class='masonry-5 bleed' markdown='1'>
-![Molnar](/assets/machines/vera_molnar_1.jpg)
-![Molnar](/assets/machines/vera_molnar_2.jpg)
-![Molnar](/assets/machines/vera_molnar_3.jpg)
-![Letraset](/assets/machines/letraset.jpg)
-![mad sans](/assets/machines/mad_sans.PNG)
-![gt cinetype](/assets/machines/cinetype.gif)
-![Thomas Muller](/assets/machines/thomas-muller-1.jpg)
-![Thomas Muller](/assets/machines/thomas-muller-2.jpg)
-![Thomas Muller](/assets/machines/thomas-muller-3.jpg)
-![Letraset](/assets/machines/plotter_art.jpg)
-![Letraset](/assets/machines/sol_lewitt_wall_drawing.jpg)
-![Letraset](/assets/machines/sol_lewitt_1.jpg)
-![Letraset](/assets/machines/coal_drawing_machine.jpg)
-![Letraset](/assets/machines/bauhaus.jpg)
-![Letraset](/assets/machines/robert-moog_1.jpg)
-![Sam Lucente](/assets/machines/intel.jpg)
-![Sam Lucente](/assets/machines/sam-lucente-1.jpg)
-![Sam Lucente](/assets/machines/sam-lucente-2.jpg)
-![Sam Lucente](/assets/machines/sam-lucente-3.jpg)
-![Il Lee](/assets/machines/IL_LEE-Untitled303.jpg)
-![Il Lee](/assets/machines/il_lee_2.jpg)
-![Kuhne](/assets/machines/dafi-kuhne.jpg)
-![Kuhne](/assets/machines/dafi-kuhne-2.jpg)
-![Condiditonal design](/assets/machines/workbook-conditional-design.jpg)
-![Moniker](/assets/machines/moniker-sand-pen.jpg)
-![Moniker](/assets/machines/moniker-do-not-touch.jpg)
-![Moniker](/assets/machines/moniker-red-yellow-blue.jpg)
-![Mexico Olympics](/assets/machines/mexico-68-olympics-03.jpg)
-![Jetset](/assets/machines/experimental-jetset-automatically_arranged_alphabets.jpg)
-![Tinguley](/assets/machines/tinguley.jpg)
-![Lewitt](/assets/machines/sol_lewitt_2.jpg)
-![Lewitt](/assets/machines/sol_lewitt_3.jpg)
-![lewit](/assets/machines/lewitt.jpg)
-![Glitch](/assets/machines/DJ3PjQ6X0AANSWp.jpg)
-![Mayer](/assets/machines/hansjorg_mayer_1.jpg)
-![Morrelet](/assets/machines/francois_morrelet_1.jpg)
-![Morrelet](/assets/machines/francois_morrelet_2.jpg)
-![Morrelet](/assets/machines/francois_morrelet_3.jpg)
-![Morrelet](/assets/machines/francois_morrelet_4.jpg)
+![Molnar](/handin18/assets/machines/vera_molnar_1.jpg)
+![Molnar](/handin18/assets/machines/vera_molnar_2.jpg)
+![Molnar](/handin18/assets/machines/vera_molnar_3.jpg)
+![Letraset](/handin18/assets/machines/letraset.jpg)
+![mad sans](/handin18/assets/machines/mad_sans.PNG)
+![gt cinetype](/handin18/assets/machines/cinetype.gif)
+![Thomas Muller](/handin18/assets/machines/thomas-muller-1.jpg)
+![Thomas Muller](/handin18/assets/machines/thomas-muller-2.jpg)
+![Thomas Muller](/handin18/assets/machines/thomas-muller-3.jpg)
+![Letraset](/handin18/assets/machines/plotter_art.jpg)
+![Letraset](/handin18/assets/machines/sol_lewitt_wall_drawing.jpg)
+![Letraset](/handin18/assets/machines/sol_lewitt_1.jpg)
+![Letraset](/handin18/assets/machines/coal_drawing_machine.jpg)
+![Letraset](/handin18/assets/machines/bauhaus.jpg)
+![Letraset](/handin18/assets/machines/robert-moog_1.jpg)
+![Sam Lucente](/handin18/assets/machines/intel.jpg)
+![Sam Lucente](/handin18/assets/machines/sam-lucente-1.jpg)
+![Sam Lucente](/handin18/assets/machines/sam-lucente-2.jpg)
+![Sam Lucente](/handin18/assets/machines/sam-lucente-3.jpg)
+![Il Lee](/handin18/assets/machines/IL_LEE-Untitled303.jpg)
+![Il Lee](/handin18/assets/machines/il_lee_2.jpg)
+![Kuhne](/handin18/assets/machines/dafi-kuhne.jpg)
+![Kuhne](/handin18/assets/machines/dafi-kuhne-2.jpg)
+![Condiditonal design](/handin18/assets/machines/workbook-conditional-design.jpg)
+![Moniker](/handin18/assets/machines/moniker-sand-pen.jpg)
+![Moniker](/handin18/assets/machines/moniker-do-not-touch.jpg)
+![Moniker](/handin18/assets/machines/moniker-red-yellow-blue.jpg)
+![Mexico Olympics](/handin18/assets/machines/mexico-68-olympics-03.jpg)
+![Jetset](/handin18/assets/machines/experimental-jetset-automatically_arranged_alphabets.jpg)
+![Tinguley](/handin18/assets/machines/tinguley.jpg)
+![Lewitt](/handin18/assets/machines/sol_lewitt_2.jpg)
+![Lewitt](/handin18/assets/machines/sol_lewitt_3.jpg)
+![lewit](/handin18/assets/machines/lewitt.jpg)
+![Glitch](/handin18/assets/machines/DJ3PjQ6X0AANSWp.jpg)
+![Mayer](/handin18/assets/machines/hansjorg_mayer_1.jpg)
+![Morrelet](/handin18/assets/machines/francois_morrelet_1.jpg)
+![Morrelet](/handin18/assets/machines/francois_morrelet_2.jpg)
+![Morrelet](/handin18/assets/machines/francois_morrelet_3.jpg)
+![Morrelet](/handin18/assets/machines/francois_morrelet_4.jpg)
 
 </div>
 
@@ -102,18 +102,18 @@ Writing these instructions by hand quickly becomes tedious, so I started to writ
 <p data-height="450" data-theme-id="33564" data-slug-hash="LeXvem" data-default-tab="result" data-user="maxakohler" data-embed-version="2" data-pen-title="Snap Lines" class="codepen">See the Pen <a href="https://codepen.io/maxakohler/pen/LeXvem/">Snap Lines</a> by Max Kohler (<a href="https://codepen.io/maxakohler">@maxakohler</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 <p data-height="450" data-theme-id="33564" data-slug-hash="XevGoY" data-default-tab="result" data-user="maxakohler" data-embed-version="2" data-pen-title="Snap Random Line" class="codepen">See the Pen <a href="https://codepen.io/maxakohler/pen/XevGoY/">Snap Random Line</a> by Max Kohler (<a href="https://codepen.io/maxakohler">@maxakohler</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://static.codepen.io/handin18/assets/embed/ei.js"></script>
 
 Doing this, I found that *repetition* led to particularly good results (more than randomisation or other forms of image-generation). With repeated shapes the drawing becomes about the machine itself - Any instance of the machine getting stuck, the pen leaking etc. becomes visible in the drawing. The machine also has a tendency to pick up vibrations - people walking by or touching the machine table leave traces in the drawings.
 
-![Machine drawing](/assets/machines/ai.png)
+![Machine drawing](/handin18/assets/machines/ai.png)
 Machine drawings in Illustrator
 
 I realised that to produce these drawings consistently I needed some way of designing them visually. Writing a piece of software that could generate machine instructions from an Illustrator file was the solution to this. Now I could prepare multiple drawings at once, scale them to the size of the paper and run them consistently.
 
 I used this technique to complete a series of geometric drawings.
 
-![Machine drawing](/assets/machines/dm1-1.jpg)
+![Machine drawing](/handin18/assets/machines/dm1-1.jpg)
 
 The issue with these drawings was that they're exactly what you'd expect coming from the machine. [Many people offered ideas](http://www.maxkoehler.com/2017/teaching-machines-to-draw/#november-24-2017) on how I could make things more interesting. Looking at the geometric drawings I'd done, I noticed an interesting effect - in places where the lines where close engouh together, they seemed to melt together into a continuous grey tone (much like halftone dots).
 
@@ -155,7 +155,7 @@ Six-hour timelapse showing one of the first four-colour drawings I ran. The imag
 
 A final refinement of this process is to look at colours other than CMYK. I discovered a Swiss research group that creates software to create colour separations for two, three, four or five colours. This is used by commercial printers to create the illusion of full-colour images in fewer plates.
 
-![Colourlibrary](/assets/machines/colorch.jpg)
+![Colourlibrary](/handin18/assets/machines/colorch.jpg)
 Full-colour image printed in red and green spot colours[colorlibraries.ch](http://colorlibrary.ch/how-to-install/)
 
 Among many others, they offer a profile for red, green and blue ink. This seemed appropriate because it mirrors the 'default' colours of cheap ballpoint pens. I was able to source the profile and used to create a number of drawings.
@@ -170,13 +170,13 @@ I spent a considerable amount of time making the first drawing machine mecanical
 Bored, I made the decision to take a week to build a second drawing machine. This one used a much simpler mechanism than Drawing Machine One: The pen is conected to the steppers by wire, and pushed against a vertical drawing surface by gravity (eliminating the need for bearings, steel rods etc). More importantly, it wouldn't run on a predetermined program like the first machine. Instead, I designed a control panel that would allow me to use the machine as a real-time drawing instrument.
 
 <p class='full' markdown='1'>
-![DM2 Schema](/assets/machines/dm2-schema.svg)
+![DM2 Schema](/handin18/assets/machines/dm2-schema.svg)
 Wiring diagram for Drawing Machine 2
 </p>
 
 <p class='masonry-2 full' full markdown='1'>
-![Moog](/assets/machines/moog.jpg)
-![Moog](/assets/machines/dm2-4.jpg)
+![Moog](/handin18/assets/machines/moog.jpg)
+![Moog](/handin18/assets/machines/dm2-4.jpg)
 </p>
 
 The control mechanism is based on the analogue synthesizer, which uses mathematical wave functions to generate sounds. I used the [same functions](http://www.maxkoehler.com/2017/teaching-machines-to-draw/#january-28-2018-another-drawing-machine) to control the movements of the pen on the page. The knobs and switches on the control panel allow the user to manipulate these functions, which in turn changes the movement of the pen. I kept both the control panel and the digital interface it is connected to verbose (with cryptic instructions), giving viewers room to discover their different functions on their own terms.
@@ -197,17 +197,17 @@ One attempt to mitigate this was to do away with the motors, and project a simul
 
 <p class="bleed hasimage" style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/256795786?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
 
-![Machine drawing](/assets/machines/dm2-large.png)
+![Machine drawing](/handin18/assets/machines/dm2-large.png)
 DM2 Installation Mockup
 
 There was some talk about installing a version of Drawing Machine Two on the side of the college building. I wrote software that would essentially automate the act of me twisting the knobs on the control panel, allowing me to plan out a series of drawings I could run during the installation.
 
 <div class='masonry-5 full' markdown='1'>
-![Machine drawing](/assets/machines/large-scale-5.png)
-![Machine drawing](/assets/machines/large-scale-6.png)
-![Machine drawing](/assets/machines/large-scale-7.png)
-![Machine drawing](/assets/machines/large-scale-8.png)
-![Machine drawing](/assets/machines/large-scale-9.png)
+![Machine drawing](/handin18/assets/machines/large-scale-5.png)
+![Machine drawing](/handin18/assets/machines/large-scale-6.png)
+![Machine drawing](/handin18/assets/machines/large-scale-7.png)
+![Machine drawing](/handin18/assets/machines/large-scale-8.png)
+![Machine drawing](/handin18/assets/machines/large-scale-9.png)
 </div>
 
 I abandoned the plan after learning about the health and safety requirements for an installation like this - It's the kind of job you have to be an actual engineer for.
